@@ -1,0 +1,271 @@
+/* @ Убирает все отступы */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* @ Делает теги HTML5 на странице блочными */
+nav,
+footer,
+header,
+aside {
+display: block;
+}
+
+
+:root {
+    --color-brand: #4D5AE5;
+    --text-color: #434455;
+    --text-color-navy: #2E2F42;
+    --color-background: #2E2F42;
+    --color-background-light: #F4F4FD;
+    --text-color-light:#FFFFFF;
+    --text-nav-hover: #404BBF;
+    --studio-logo-footer:#f4f4fd;
+    --studio-logo-header:#2e2f42;
+    --filter-buttons-border:#E7E9FC;
+    
+  
+}
+
+body {
+    background-color: var(--text-color-light);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+ .web-logo {
+     color: var(--color-brand);
+     font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+ }
+
+ .web-logo .studio-logo-header {
+     color: var(--studio-logo-header);
+     letter-spacing: 0.03em;
+    text-transform: uppercase;
+ }
+ .web-logo .studio-logo-footer {
+     color: var(--studio-logo-footer);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+ }
+
+
+  /* Site-nav */
+
+ .list { style:none;}
+
+ .site-nav .link {text-decoration: none;
+    color: var(--text-color-navy);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.02em;}
+
+    .site-nav .link:hover,
+    .site-nav .link:focus {color:var(--text-nav-hover);
+    }
+
+    .site-nav .active{ color:var(--text-nav-hover);
+    }
+
+    .header-contacts {
+        font-style: normal;
+    }
+
+    .header-contacts
+    .header-adress {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;}
+
+    .header-contacts .header-adress:hover,
+    .header-contacts .header-adress:focus {
+  color: var(--text-nav-hover);
+font-style: normal}
+
+  /* Baner */
+
+  .baner{
+    background-color: var( --text-color-navy)}
+
+    .baner-title { 
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        line-height: 1.07;
+        color:var(--text-color-light)}
+
+    .baner-button {
+            width: 169px;
+            height: 56px;
+            font-weight: 500;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            background:var(--color-brand);
+            color:var(--text-color-light);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+        }
+
+    .baner-button:hover,
+    .baner-button:focus,
+    .baner-button:active {background: var(--text-nav-hover);
+        text-align: center;
+    }
+
+    /* Our advantages */
+
+ .visually-hidden {visibility: hidden;
+    pointer-events: none;
+    position: absolute;}
+
+    .advantage-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    letter-spacing: 0.02em;
+color:var(--text-color-navy)}
+
+.advantage-text {
+    font-size: 16px;
+    line-height: 1.5;
+letter-spacing: 0.02em;
+color:var(--text-color);}
+
+/* What are we doing */
+
+.title{font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    line-height: 1.11;
+text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+color:var(--text-color-navy)
+}
+
+/* Our Team */
+
+.section-team {
+    
+background:var(--color-background-light)}
+
+.team-title{font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    line-height: 1.11;
+text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+color:var(--text-color-navy)}
+
+.our-team-card{
+width: 264px;
+height: 380px;
+background-color: var(--text-color-light);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;}
+
+.our-team-name {font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+color:var(--color-background);}
+
+.our-team-text {font-style: normal;
+   
+    font-size: 16px;
+    line-height: 1.5;
+text-align: center;
+    letter-spacing: 0.02em;
+color: var(--text-color);}
+
+/* footer */
+
+.footer {
+    background-color:var(--color-background);}
+
+    .footer-text {font-style: normal;
+       
+        font-size: 16px;
+        line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-background-light);}
+
+    /* Portfolio */
+
+        .filter-buttons-portfolio {
+            background-color: var(--color-background-light);
+            color: var(--color-brand);
+            border: 1px solid #E7E9FC;
+            border-radius: 4px;
+            align-items: center;
+            font-style: normal;
+            font-family: Roboto, sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+            text-align: center;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+           
+        }
+
+                 .filter-buttons-portfolio:hover,
+                 .filter-buttons-portfolio:focus { 
+                    color: var(--text-color-light);
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    font-family: Roboto;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    letter-spacing: 0.04em;
+                    background-color: var(--text-nav-hover);
+                    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                        border-radius: 4px;
+                color: var(--text-color-light);
+            cursor: pointer;}
+
+            .link{text-decoration: none}
+
+                .portfolio-title{font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 1.2;
+                letter-spacing: 0.02em;
+            color: var(--text-color-navy);}
+
+            .portfolio-text{font-style: normal;
+              
+                font-size: 16px;
+                line-height: 1.5;
+            letter-spacing: 0.02em;
+        color: var(--text-color);}
