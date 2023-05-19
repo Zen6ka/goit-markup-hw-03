@@ -1,6 +1,5 @@
 /* @ Убирает все отступы */
-
-* {
+/* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -11,9 +10,8 @@ nav,
 footer,
 header,
 aside {
-display: block;
+    display: block;
 }
-
 
 :root {
     --color-brand: #4D5AE5;
@@ -61,17 +59,48 @@ body {
      text-transform: uppercase;
  }
 
+.container{
+    Margin: 0 auto; 
+    Padding:0 15 px;
+    width:1158px;
+}
+
+.section{padding-bottom: 120px;}
 
   /* Site-nav */
+  .page-header{display: flex;
+}
+  .main-nav{display:flex;
+  align-items: center;
+}
+ .site-nav {padding: 24px 40px 24px 76px;}
+ .header-adress{padding: 24px 40px 24px 332px;}
+ .header-tel { 24px 156px 24px 40px;}
 
- .list { style:none;}
+ .list { 
+list-style:none;
+display: flex;
+flex-direction: row;
+margin: 0;
+padding: 0;}
 
  .site-nav .link {text-decoration: none;
     color: var(--text-color-navy);
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+margin-right: 40px;}
+
+        .link-studio {
+            text-decoration: none;
+                color: var(--text-color-navy);
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 500;
+                letter-spacing: 0.02em;
+                margin-right: 40px;
+        margin-left: 76px;}
 
     .site-nav .link:hover,
     .site-nav .link:focus {color:var(--text-nav-hover);
@@ -84,8 +113,11 @@ body {
         font-style: normal;
     }
 
+        .container-adres{display: flex;}
+
     .header-contacts
-    .header-adress {
+    .header-adress
+    .header-tel {
     text-decoration: none;
     font-style: normal;
     color: var(--text-color);
@@ -98,10 +130,19 @@ body {
   color: var(--text-nav-hover);
 font-style: normal}
 
+.header-tel:hover {
+        color: var(--text-nav-hover);
+        font-style: normal
+    }
+        .header-tel:focus {
+                color: var(--text-nav-hover);
+                font-style: normal
+            }
   /* Baner */
 
   .baner{
-    background-color: var( --text-color-navy)}
+    background-color: var( --text-color-navy);
+text-align: center;}
 
     .baner-title { 
         font-weight: 700;
@@ -110,20 +151,24 @@ font-style: normal}
         text-align: center;
         letter-spacing: 0.02em;
         line-height: 1.07;
-        color:var(--text-color-light)}
+        color:var(--text-color-light);
+        margin-bottom: 48px;
+        margin-top: 0;
+    }
 
     .baner-button {
-            width: 169px;
+            min-width: 169px;
             height: 56px;
+            padding: 32px 16px;
             font-weight: 500;
             font-family: "Roboto", sans-serif;
+            text-align: center;
             font-size: 16px;
             line-height: 1.5;
             background:var(--color-brand);
             color:var(--text-color-light);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
-            text-align: center;
             letter-spacing: 0.04em;
             cursor: pointer;
         }
@@ -141,20 +186,27 @@ font-style: normal}
     position: absolute;}
 
     .advantage-title {
+       
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
     letter-spacing: 0.02em;
-color:var(--text-color-navy)}
+color:var(--text-color-navy);
+margin-top: 120px;
+margin-bottom: 0;}
 
 .advantage-text {
     font-size: 16px;
     line-height: 1.5;
 letter-spacing: 0.02em;
-color:var(--text-color);}
+color:var(--text-color);
+margin-top: 8;
+margin-bottom: 0;
+}
 
 /* What are we doing */
+
 
 .title{font-style: normal;
     font-weight: 700;
@@ -164,14 +216,19 @@ color:var(--text-color);}
 text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-color:var(--text-color-navy)
+color:var(--text-color-navy);
+margin-top: 0;
+margin-bottom: 72px;
 }
+
+.photo{margin-right: 24px;}
 
 /* Our Team */
 
 .section-team {
     
-background:var(--color-background-light)}
+background:var(--color-background-light)
+}
 
 .team-title{font-style: normal;
     font-weight: 700;
@@ -181,14 +238,17 @@ background:var(--color-background-light)}
 text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-color:var(--text-color-navy)}
+color:var(--text-color-navy);
+margin-bottom: 72px;}
 
 .our-team-card{
 width: 264px;
 height: 380px;
 background-color: var(--text-color-light);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;}
+border-radius: 0px 0px 4px 4px;
+margin-right: 24px;
+}
 
 .our-team-name {font-style: normal;
     font-weight: 500;
@@ -209,14 +269,17 @@ color: var(--text-color);}
 /* footer */
 
 .footer {
-    background-color:var(--color-background);}
+    background-color:var(--color-background);
+ }
+
 
     .footer-text {font-style: normal;
        
         font-size: 16px;
         line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--color-background-light);}
+    color: var(--color-background-light);
+   margin-top: 17.5px;}
 
     /* Portfolio */
 
@@ -254,7 +317,8 @@ color: var(--text-color);}
                 color: var(--text-color-light);
             cursor: pointer;}
 
-            .link{text-decoration: none}
+            .link{text-decoration: none
+           }
 
                 .portfolio-title{font-style: normal;
                     font-weight: 500;
