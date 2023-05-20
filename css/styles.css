@@ -24,6 +24,7 @@ aside {
     --studio-logo-footer:#f4f4fd;
     --studio-logo-header:#2e2f42;
     --filter-buttons-border:#E7E9FC;
+    --page-header-border: #e7e9fc;
     
   
 }
@@ -43,12 +44,14 @@ body {
     text-decoration: none;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding: 24px 0;
  }
 
  .web-logo .studio-logo-header {
      color: var(--studio-logo-header);
      letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
  }
  .web-logo .studio-logo-footer {
      color: var(--studio-logo-footer);
@@ -59,7 +62,7 @@ body {
      text-transform: uppercase;
  }
 
-.container{
+.container{display: flex;
     Margin: 0 auto; 
     Padding:0 15 px;
     width:1158px;
@@ -68,29 +71,35 @@ body {
 .section{padding-bottom: 120px;}
 
   /* Site-nav */
-  .page-header{display: flex;
+  .page-header{
+    display: flex;
+    border-bottom: 1px solid var(--page-header-border);
 }
   .main-nav{display:flex;
   align-items: center;
+
 }
- .site-nav {padding: 24px 40px 24px 76px;}
- .header-adress{padding: 24px 40px 24px 332px;}
- .header-tel { 24px 156px 24px 40px;}
+ .site-nav {
+gap: 40px;}
+ .header-adress{
+    padding: 24px 0}
+ .header-tel { padding: 24px 0}
 
  .list { 
 list-style:none;
 display: flex;
 flex-direction: row;
 margin: 0;
-padding: 0;}
+padding: 0;
+}
 
  .site-nav .link {text-decoration: none;
     color: var(--text-color-navy);
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    letter-spacing: 0.02em;
-margin-right: 40px;}
+    letter-spacing: 0.02em;   
+}
 
         .link-studio {
             text-decoration: none;
@@ -99,8 +108,9 @@ margin-right: 40px;}
                 line-height: 1.5;
                 font-weight: 500;
                 letter-spacing: 0.02em;
-                margin-right: 40px;
-        margin-left: 76px;}
+               
+
+                }
 
     .site-nav .link:hover,
     .site-nav .link:focus {color:var(--text-nav-hover);
@@ -140,11 +150,11 @@ font-style: normal}
             }
   /* Baner */
 
-  .baner{
+  .baner{ padding: 188px 0;
     background-color: var( --text-color-navy);
 text-align: center;}
 
-    .baner-title { 
+    .baner-title { max-width: 496px;
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
@@ -168,9 +178,11 @@ text-align: center;}
             background:var(--color-brand);
             color:var(--text-color-light);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border: none;
             border-radius: 4px;
             letter-spacing: 0.04em;
             cursor: pointer;
+            display: block;
         }
 
     .baner-button:hover,
@@ -221,7 +233,8 @@ margin-top: 0;
 margin-bottom: 72px;
 }
 
-.photo{margin-right: 24px;}
+img{display: block;
+    margin-right: 24px;}
 
 /* Our Team */
 
