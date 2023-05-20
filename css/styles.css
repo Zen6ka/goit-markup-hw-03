@@ -91,6 +91,7 @@ display: flex;
 flex-direction: row;
 margin: 0;
 padding: 0;
+gap: 24px;
 }
 
  .site-nav .link {text-decoration: none;
@@ -192,7 +193,7 @@ text-align: center;}
     }
 
     /* Our advantages */
-
+.section{padding: 120px 0;}
  .visually-hidden {visibility: hidden;
     pointer-events: none;
     position: absolute;}
@@ -205,15 +206,14 @@ text-align: center;}
         line-height: 1.2;
     letter-spacing: 0.02em;
 color:var(--text-color-navy);
-margin-top: 120px;
-margin-bottom: 0;}
+margin-bottom: 8px;
+width: calc((100% - 72px) / 4);}
 
 .advantage-text {
     font-size: 16px;
     line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--text-color);
-margin-top: 8;
 margin-bottom: 0;
 }
 
@@ -233,13 +233,14 @@ margin-top: 0;
 margin-bottom: 72px;
 }
 
+.photo{width: calc((100% - 48px) / 3);}
 img{display: block;
-    margin-right: 24px;}
+   }
 
 /* Our Team */
 
 .section-team {
-    
+padding: 120px 0;
 background:var(--color-background-light)
 }
 
@@ -254,22 +255,20 @@ text-align: center;
 color:var(--text-color-navy);
 margin-bottom: 72px;}
 
-.our-team-card{
-width: 264px;
-height: 380px;
+.our-team-card{width: calc((100% - 72px) / 4);
 background-color: var(--text-color-light);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
-margin-right: 24px;
 }
-
+.name{padding: 32px 16px;}
 .our-team-name {font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-color:var(--color-background);}
+color:var(--color-background);
+margin-bottom: 8px;}
 
 .our-team-text {font-style: normal;
    
@@ -281,7 +280,7 @@ color: var(--text-color);}
 
 /* footer */
 
-.footer {
+.footer { padding: 100px 0;
     background-color:var(--color-background);
  }
 
