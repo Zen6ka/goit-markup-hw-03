@@ -361,12 +361,7 @@ color: var(--text-color);}
             letter-spacing: 0.02em;
         color: var(--text-color);}
 
-    /*.list-portfolio{ 
+    .list-portfolio{ 
         list-style: none;
             display: flex;
-            flex-direction: row;
-            margin: 0;
-            padding: 0;
-            gap: 24px;
-            justify-content: center;
-        }
+            flex-wrap: wrap;}
