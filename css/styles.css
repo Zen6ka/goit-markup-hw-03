@@ -35,7 +35,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
- .web-logo {
+ .web-logo {display: inline-block;
      color: var(--color-brand);
      font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -45,6 +45,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding: 24px 0;
+   
  }
 
  .web-logo .studio-logo-header {
@@ -52,6 +53,7 @@ body {
      letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+    display: inline-block;
  }
  .web-logo .studio-logo-footer {
      color: var(--studio-logo-footer);
@@ -62,6 +64,7 @@ body {
      text-transform: uppercase;
      margin-bottom: 16px;
     display: inline-block;
+    margin-bottom: 16px;
  }
 
 .container{display: flex;
@@ -324,6 +327,11 @@ color: var(--text-color);}
             letter-spacing: 0.04em;
             cursor: pointer;
             padding: 12px 24px; 
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            min-width: 69px;
         }
 
                  .filter-buttons-portfolio:hover,
@@ -369,10 +377,25 @@ color: var(--text-color);}
         column-gap: 24px;
     row-gap: 48px;}
 
-    .list-port {width: calc((100% - 48px) / 3);}
+    .list-port {width: calc((100% - 48px) / 3);
+    box-sizing: border-box;
+width: 360px;
+    height: 420px;
+border: 1px solid var(--page-header-border);}
 
     .name-portfolio{
         padding: 32px 16px;
-    border: 1px solid var(--page-header-border);
 border-top: none;
 }
+
+.link-port{width: calc((100% - 48px) / 3);
+text-decoration: none;
+    color: var(--text-color-navy);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.02em;}
+
+img{display: block; 
+        max-width: 100%;
+         height: auto;}
