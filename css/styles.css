@@ -60,6 +60,8 @@ body {
     line-height: 1.17;
      letter-spacing: 0.03em;
      text-transform: uppercase;
+     margin-bottom: 16px;
+    display: inline-block;
  }
 
 .container{display: flex;
@@ -198,8 +200,10 @@ text-align: center;}
     pointer-events: none;
     position: absolute;}
 
+    .list-advantage{
+    width: calc((100% - 72px) / 4);
+    }
     .advantage-title {
-       
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -207,7 +211,7 @@ text-align: center;}
     letter-spacing: 0.02em;
 color:var(--text-color-navy);
 margin-bottom: 8px;
-width: calc((100% - 72px) / 4);}
+}
 
 .advantage-text {
     font-size: 16px;
