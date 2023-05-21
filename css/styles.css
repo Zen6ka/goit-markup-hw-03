@@ -49,6 +49,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+    padding: 24px 0;
  }
 
  .web-logo .studio-logo-footer {
@@ -236,7 +237,7 @@ font-style: normal; }
     }
 
     .list-advantage{
-    width: calc((100% - 72px) / 4);
+width: calc((100% - 72px) / 4);
     }
 
     .second-list{display: flex;
@@ -281,7 +282,8 @@ margin-bottom: 72px;
     gap: 24px;
 }
 
-.photo{width: calc((100% - 48px) / 3);}
+.photo { width: calc((100% - 48px) / 3);}
+
 img{display: block;
    }
 
@@ -375,9 +377,9 @@ color: var(--text-color);}
             align-items: center;
             font-style: normal;
             font-family: Roboto, sans-serif;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 1.5;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
             text-align: center;
             letter-spacing: 0.04em;
             cursor: pointer;
