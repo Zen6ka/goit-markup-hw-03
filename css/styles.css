@@ -36,13 +36,10 @@ body {
 }
 .web-logo .studio-logo-header {
     color: var(--studio-logo-header);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-right: 76px;
-    display: inline-block;
+   
 }
 
- .web-logo {display: inline-block;
+ .web-logo {
      color: var(--color-brand);
      font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -51,9 +48,7 @@ body {
     text-decoration: none;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 24px 0;
-   
-    
+    margin-right: 76px;  
  }
  .web-logo .studio-logo-footer {
      color: var(--studio-logo-footer);
@@ -217,9 +212,18 @@ font-style: normal; }
     /* Our advantages */
 .section{padding: 120px 0;}
 
- .visually-hidden {visibility: hidden;
-    pointer-events: none;
-    position: absolute;}
+ .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 
     .list-advantage{
     width: calc((100% - 72px) / 4);
