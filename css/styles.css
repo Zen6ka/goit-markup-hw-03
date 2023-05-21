@@ -34,6 +34,13 @@ body {
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
 }
+.web-logo .studio-logo-header {
+    color: var(--studio-logo-header);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;
+    display: inline-block;
+}
 
  .web-logo {display: inline-block;
      color: var(--color-brand);
@@ -46,14 +53,7 @@ body {
     text-transform: uppercase;
     padding: 24px 0;
    
- }
-
- .web-logo .studio-logo-header {
-     color: var(--studio-logo-header);
-     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-right: 76px;
-    display: inline-block;
+    
  }
  .web-logo .studio-logo-footer {
      color: var(--studio-logo-footer);
@@ -64,31 +64,40 @@ body {
      text-transform: uppercase;
      margin-bottom: 16px;
     display: inline-block;
-    margin-bottom: 16px;
+    
  }
 
-.container{display: flex;
+.container{
     Margin: 0 auto; 
-    Padding:0 15 px;
+    Padding:0 15px;
     width:1158px;
 }
 
 .section{padding-bottom: 120px;}
 
   /* Site-nav */
+  .header-container{display: flex;
+justify-content:space-between;}
+
   .page-header{
     display: flex;
     border-bottom: 1px solid var(--page-header-border);
 }
-  .main-nav{display:flex;
+  .main-nav { display: flex;
   align-items: center;
-
 }
- .site-nav {
-gap: 40px;}
+
+ .site-nav {display: flex;
+gap: 40px;
+}
+
  .header-adress{
-    padding: 24px 0}
- .header-tel { padding: 24px 0}
+    padding: 24px 0;}
+
+ .header-tel { padding: 24px 0;} */
+
+.contact-nav{display: flex;
+gap:40px;}
 
  .list { 
 list-style:none;
@@ -98,15 +107,15 @@ margin: 0;
 padding: 0;
 gap: 24px;
 }
-
- .site-nav .link {text-decoration: none;
+.site-nav .link {
+    text-decoration: none;
     color: var(--text-color-navy);
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    letter-spacing: 0.02em;   
+    letter-spacing: 0.02em;
 }
-
+ 
         .link-studio {
             text-decoration: none;
                 color: var(--text-color-navy);
@@ -114,8 +123,6 @@ gap: 24px;
                 line-height: 1.5;
                 font-weight: 500;
                 letter-spacing: 0.02em;
-               
-
                 }
 
     .site-nav .link:hover,
@@ -175,7 +182,7 @@ text-align: center;}
     .baner-button {
             min-width: 169px;
             height: 56px;
-            padding: 32px 16px;
+            padding: 16px 32px;
             font-weight: 500;
             font-family: "Roboto", sans-serif;
             text-align: center;
