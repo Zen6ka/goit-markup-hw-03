@@ -80,11 +80,20 @@ body {
 justify-content:space-between;}
 
   .page-header{
-    display: flex;
     border-bottom: 1px solid var(--page-header-border);
 }
+
+ .list {
+     list-style: none;}
+
   .main-nav { display: flex;
   align-items: center;
+}
+
+.contact-nav {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
 }
 
  .site-nav {display: flex;
@@ -96,17 +105,6 @@ gap: 40px;
 
  .header-tel { padding: 24px 0;} */
 
-.contact-nav{display: flex;
-gap:40px;}
-
- .list { 
-list-style:none;
-display: flex;
-flex-direction: row;
-margin: 0;
-padding: 0;
-gap: 24px;
-}
 .site-nav .link{
     text-decoration: none;
     color: var(--text-color-navy);
@@ -156,23 +154,18 @@ gap: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;}
 
-    .header-contacts .header-adress:hover,
-    .header-contacts .header-adress:focus {
-  color: var(--text-nav-hover);
-font-style: normal;}
-
-/*.contact-nav:hover,
-.contact-nav:focus {
-        color: var(--text-nav-hover);
-        font-style: normal;
-    }
-      
-            
+   .header-adress:hover,
+   .header-adress:focus,
+   .header-tel:hover,
+   .header-tel:focus {
+color: var(--text-nav-hover);
+font-style: normal; }
+           
   /* Baner */
 
   .baner{ padding: 188px 0;
     background-color: var( --text-color-navy);
-text-align: center;}
+}
 
     .baner-title { max-width: 496px;
         font-weight: 700;
@@ -182,8 +175,10 @@ text-align: center;}
         letter-spacing: 0.02em;
         line-height: 1.07;
         color:var(--text-color-light);
-        margin-bottom: 48px;
         margin-top: 0;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 48px;
     }
 
     .baner-button {
@@ -192,6 +187,7 @@ text-align: center;}
             padding: 16px 32px;
             font-weight: 500;
             font-family: "Roboto", sans-serif;
+            font-style: normal;
             text-align: center;
             font-size: 16px;
             line-height: 1.5;
@@ -199,11 +195,18 @@ text-align: center;}
             color:var(--text-color-light);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border: none;
-            border-radius: 4px;
             letter-spacing: 0.04em;
             cursor: pointer;
             display: block;
+            margin-right: auto;
+            margin-left: auto;
         }
+
+    .baner-button {display: block;
+            min-width: 169px;
+            height: 56px;
+            border: none;
+            border-radius: 4px;}
 
     .baner-button:hover,
     .baner-button:focus,
@@ -213,6 +216,7 @@ text-align: center;}
 
     /* Our advantages */
 .section{padding: 120px 0;}
+
  .visually-hidden {visibility: hidden;
     pointer-events: none;
     position: absolute;}
@@ -220,6 +224,10 @@ text-align: center;}
     .list-advantage{
     width: calc((100% - 72px) / 4);
     }
+
+    .second-list{display: flex;
+        gap: 24px;}
+
     .advantage-title {
         font-style: normal;
         font-weight: 500;
@@ -254,6 +262,11 @@ margin-top: 0;
 margin-bottom: 72px;
 }
 
+.whatdoing-list {
+    display: flex;
+    gap: 24px;
+}
+
 .photo{width: calc((100% - 48px) / 3);}
 img{display: block;
    }
@@ -264,6 +277,10 @@ img{display: block;
 padding: 120px 0;
 background:var(--color-background-light)
 }
+
+.team-list{
+        display: flex;
+        gap: 24px;}
 
 .team-title{font-style: normal;
     font-weight: 700;
@@ -334,6 +351,7 @@ color: var(--text-color);}
     list-style: none;
 }
     
+
 .filter-buttons-portfolio {
             background-color: var(--color-background-light);
             color: var(--color-brand);
@@ -393,17 +411,15 @@ color: var(--text-color);}
         color: var(--text-color);}
 
     .list-portfolio{ 
+        display: flex;
+            margin: 0;
+            padding: 0;
         list-style: none;
-            display: flex;
             flex-wrap: wrap;
-        column-gap: 24px;
-    row-gap: 48px;}
+            column-gap: 24px;
+            row-gap: 48px;}
 
-    .list-port {width: calc((100% - 48px) / 3);
-    box-sizing: border-box;
-    width: 360px;
-    height: 420px;
-}
+    .list-port {width: calc((100% - 48px) / 3);}
 
     .name-portfolio{
          padding: 32px 16px;
