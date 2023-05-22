@@ -360,7 +360,6 @@ color: var(--text-color);}
             Margin: 0 auto;
             Padding: 0 15px;
             width: 1158px;
-            border: 1px solid var(--page-header-border);
         }
 
 .list-buttons-portfolio{display: flex;
